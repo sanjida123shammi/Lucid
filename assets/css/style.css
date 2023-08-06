@@ -1,0 +1,190 @@
+/* 
+	Theme: LUCID Responsive Html Template
+	Author: Sanjida Shammi
+	Live URL: https://www.something.com
+
+	Primary Color: #008ed6
+	Secondary Color: #1a1a1a
+
+	Font Style: Noto Sans Japanese
+ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global CSS */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+}
+p{	
+    font-size: 18px;
+    line-height: 35px;
+	color: #999999;
+}
+.btn-all{
+    border: 2px solid #454549;
+    border-radius: 3px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.btn-all:hover{
+	background: #008ed6;
+	border: 2px solid #008ed6;
+	color: #fff;
+}
+h6{
+	text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    color: #008ed6;
+}
+.section-title h2{
+    margin-top: 20px;
+	font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+.section-title span{
+	position: relative;
+	display: block;
+    margin: 2% 0;
+}
+.section-title span::before{
+	position: absolute;
+	content: "";	
+    background: #008ed6;
+	width: 0;
+    height: 4px;
+    left: 45.8%;
+    transition: all .3s ease-in-out;
+}
+.section-title span::after{
+	position: absolute;
+	content: "";	
+    background: #008ed6;
+	width: 0;
+    height: 4px;
+    right: 45.8%;
+    transition: all .3s ease-in-out;
+}
+section:hover span::before,
+section:hover span::after{
+	width: 4%;
+}
+
+
+/* Header CSS */
+header{
+	position: relative;
+	background: url('../img/banner.png') no-repeat center;
+	background-size: cover;
+	min-height: 100vh;
+}
+.navbar{
+	padding: 50px 0;
+}
+.navbar-brand img{
+	width: 180px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.nav-link{
+	position: relative;
+    margin-left: 25px;
+    font-size: 20px;
+	color: #fff;
+}
+.nav-link:hover{
+	color: #fff;
+}
+.nav-link::before{
+	content: "";
+    position: absolute;
+    border-bottom: 5px solid #008ed6;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+.nav-link::after{
+    position: absolute;
+	content: "";
+    border-bottom: 5px solid #008ed6;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+.nav-link:hover::before,
+.nav-link:hover::after{
+	width: 47%;
+}
+.hero-row{
+	min-height: 75vh;
+}
+.hero-content h1{
+	margin: 25px 0;
+	font-size: 48px;
+	color: #fff;
+}
+.hero-content p{
+	margin-bottom: 30px;
+}
+.hero-content ul li{
+	display: inline-block;
+	list-style: none;
+}
+.hero-img img{
+	position: absolute;
+    width: 30%;
+    bottom: 0;
+    right: 11%;
+}
+
+
+/* Feature CSS */
+.feature-section{
+	padding: 4% 0;
+}
+.feature-title{
+	text-align: center;
+	margin-bottom: 5%;
+}
+.feature-title span{
+	margin: 2% auto;
+}
+.feature-content{
+	text-align: center;
+}
+.feature-content .icon-border{
+	border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+.icon-border i{
+	font-size: 45px;
+	line-height: 100px;
+	color: #008ed6;
+}
+.feature-content h3{
+    margin: 30px 0 15px;
+    font-size: 25px;
+}
