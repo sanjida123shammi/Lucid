@@ -164,7 +164,7 @@ header{
 }
 .feature-title{
 	text-align: center;
-	margin-bottom: 5%;
+	margin-bottom: 9%;
 }
 .feature-title span{
 	margin: 2% auto;
@@ -180,7 +180,7 @@ header{
     height: 100px;
 }
 .icon-border i{
-	font-size: 45px;
+	font-size: 33px;
 	line-height: 100px;
 	color: #008ed6;
 }
