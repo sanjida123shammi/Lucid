@@ -61,7 +61,7 @@ h6{
 .section-title span{
 	position: relative;
 	display: block;
-    margin: 2% 0;
+    margin: 2% 0 8%;
 }
 .section-title span::before{
 	position: absolute;
@@ -201,14 +201,17 @@ header{
 .about-title{
 	margin-top: 3%;
 }
-.about-title span{
+.about-title span,
+.testimonial-content span{
 	margin: 4% 0 8%;
 	text-align: right;
 }
-.about-title span::before{
+.about-title span::before, 
+.testimonial-content span::before{
 	left: 0;
 }
-.about-title span::after{
+.about-title span::after,
+.testimonial-content span::after{
 	right: 91.6%;
 }
 .about-content p{
@@ -231,4 +234,14 @@ header{
 	display: inline-block;
 	margin-left: 10px;
 	font-size: 18px;
+}
+
+
+/* Testimonial CSS */
+.testimonial-section{
+	background: #f2f2f2;
+	padding: 2.3% 0 1.5%;
+}
+.iPhone-image{
+	width: 100%;
 }
