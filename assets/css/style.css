@@ -1,10 +1,10 @@
 /* 
 	Theme: LUCID Responsive Html Template
 	Author: Sanjida Shammi
-	Live URL: https://www.something.com
+	Live URL: https://sanjida123shammi.github.io/Lucid/
 
 	Primary Color: #008ed6
-	Secondary Color: #1a1a1a
+	Secondary Color: #ededed
 
 	Font Style: Noto Sans Japanese
  */
@@ -32,9 +32,9 @@ p{
 	color: #999999;
 }
 .btn-all{
-    border: 2px solid #454549;
+    border: 1px solid #454549;
     border-radius: 3px;
-    padding: 15px 30px;
+    padding: 15px 28px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
@@ -42,7 +42,7 @@ p{
 }
 .btn-all:hover{
 	background: #008ed6;
-	border: 2px solid #008ed6;
+	border: 1px solid #008ed6;
 	color: #fff;
 }
 h6{
@@ -51,6 +51,9 @@ h6{
     font-weight: 800;
     letter-spacing: 1.3px;
     color: #008ed6;
+}
+.section-title{
+	text-align: center;
 }
 .section-title h2{
     margin-top: 20px;
@@ -69,7 +72,7 @@ h6{
     background: #008ed6;
 	width: 0;
     height: 3px;
-    left: 45.8%;
+    left: 46.8%;
     transition: all .3s ease-in-out;
 }
 .section-title span::after{
@@ -78,16 +81,25 @@ h6{
     background: #008ed6;
 	width: 0;
     height: 3px;
-    right: 45.8%;
+    right: 46.8%;
     transition: all .3s ease-in-out;
 }
 section:hover span::before,
 section:hover span::after{
-	width: 4%;
+	width: 3%;
+}
+.padding-0{
+	padding: 0;
+}
+.mr-0{
+	margin-right: 0;
+}
+.pr-0{
+	padding-right: 0;
 }
 
 
-/* Header CSS */
+/* Header Section CSS */
 header{
 	position: relative;
 	background: url('../img/banner.png') no-repeat center;
@@ -158,13 +170,12 @@ header{
 }
 
 
-/* Feature CSS */
+/* Feature Section CSS */
 .feature-section{
 	padding: 4% 0;
 	border-bottom: 2px solid #ededed;
 }
 .feature-title{
-	text-align: center;
 	margin-bottom: 9%;
 }
 .feature-title span{
@@ -191,28 +202,34 @@ header{
 }
 
 
-/* About CSS */
-.about-section{
+/* About Section CSS */
+.first-about-section{
 	padding: 5.5% 0 2.5%;
 }
-.about-img img{
+.about-img img, .iPhone-image{
 	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+.about-img img:hover, .iPhone-image:hover{
+	transform: scale(1.1, 1.1);
 }
 .about-title{
 	margin-top: 3%;
+	text-align: left;
 }
-.about-title span,
-.testimonial-content span{
+.about-title span{
 	margin: 4% 0 8%;
 	text-align: right;
 }
-.about-title span::before, 
-.testimonial-content span::before{
+.about-title span::before{
 	left: 0;
 }
-.about-title span::after,
-.testimonial-content span::after{
-	right: 91.6%;
+.about-title span::after{
+	right: 89.6%;
+}
+.first-about-section:hover span::before, .second-about-section:hover span::before,
+.first-about-section:hover span::after, .second-about-section:hover span::after{
+	width: 5%;
 }
 .about-content p{
 	margin: 0 0 20px;
@@ -235,13 +252,258 @@ header{
 	margin-left: 10px;
 	font-size: 18px;
 }
-
-
-/* Testimonial CSS */
-.testimonial-section{
+.second-about-section{
 	background: #f2f2f2;
 	padding: 2.3% 0 1.5%;
 }
-.iPhone-image{
+
+
+/* Testimonial Section CSS */
+.testimonial-section{
+	position: relative;
+	background: url('../img/slide-bg-one.png') no-repeat center;
+	background-size: cover;
+	padding: 4% 0;
+	z-index: 1;
+}
+.testimonial-section::before{
+	position: absolute;
+	content: "";
+	background: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
 	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.testimonial-title h2{
+	color: #fff;
+}
+.owl-theme{
+	margin-top: 3%;
+}
+.item{
+	width: 90%;
+	font-weight: 300;
+}
+.item p, .item h5{
+	color: #fff;
+}
+.client-review{
+	margin-bottom: 2%;
+}
+.client-review p{
+	font-style: italic;
+	font-size: 20px;
+}
+.client-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.client-img img{
+	border-radius: 50%;
+}
+.client-info p{
+    margin-top: 4%;
+	line-height: 10px;
+}
+.client-info h5{
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.owl-dots{
+	margin-top: 6%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-dots .owl-dot span{
+	width: 8px !important;
+	height: 8px !important;
+	background: transparent !important;
+	border: 1px solid #999999;
+}
+.owl-dots .owl-dot.active span{
+	width: 16px !important;
+	height: 16px !important;
+	background: #fff !important;
+	border: 1px solid #fff;
+}
+
+
+/* Ad Section CSS */
+.ad-section{
+	background: #15141a;
+	padding: 3% 0 2.5%;
+}
+.ad-content p{
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+}
+.ad-content p span{
+	font-weight: 700;
+}
+.ad-button{
+	text-align: right;
+}
+.ad-button ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+
+/* Pricing Section CSS */
+.pricing-section{
+	padding: 4% 0;
+}
+.pricing-title span{
+	margin: 3% 0 10%;
+}
+.price-table{
+	border: 1px solid #e0e0e0;
+	padding: 22px 0;
+	text-align: center;
+}
+.price-table h3{
+	margin-bottom: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+.price{
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 28px 0 20px;
+}
+.price h2{
+	font-size: 58px;
+}
+.price h2 sup{
+	font-size: 30px;
+	font-weight: 700;
+}
+.price-content{
+	padding: 30px;
+}
+.price-content span{
+	color: #008ed6;
+}
+.btn-order{
+	margin-bottom: 25px;
+	border: 1px solid #e0e0e0;
+    color: #008ed6;
+    transition: all .2s ease-in-out;
+}
+.price-table:hover h3{
+	color: #008ed6;
+}
+.price-table:hover .price, .price-table:hover .price p,
+.price-table:hover .btn-order{
+	background: #008ed6;
+	color: #fff;
+}
+.price-table:hover .btn-order{
+	border: 1px solid #008ed6;
+}
+
+
+/* Contact Section CSS */
+.contact-section{
+	background: #ededed;
+	padding: 4% 0 20%;
+}
+.contact-info{
+	text-align: center;
+}
+.icon-box i{
+	margin-bottom: 10%;
+	font-size: 42px;
+	color: #008ed6;
+    transition: all .4s ease-in-out;
+}
+.contact-info p{
+	margin-bottom: 0;
+    line-height: 30px;
+}
+.contact-info .location{
+	padding: 0 93px;
+}
+.contact-info:hover .icon-box i{
+	transform: scale(1.2, 1.2);
+	color: #005581;
+}
+.form-box{
+	position: absolute;
+	background: #15141a;
+	margin-top: 3%;
+	padding: 3.3% 4%;
+	z-index: 1;
+}
+.form-box form .form-control{
+	background: transparent;
+    border: 1px solid #444348;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    padding: 10px 15px;
+    color: #999999;
+}
+.form-box form textarea{
+	height: 100%;
+}
+.form-box form input::placeholder, 
+.form-box form textarea::placeholder{
+	color: #444348;
+}
+.form-box form input[type='submit']{
+	background: #008ed6;
+	border: 1px solid #008ed6;
+    border-radius: 3px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+	float: right;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.form-box form input[type='submit']:hover{
+	background: #005581;
+	border: 1px solid #005581;
+}
+.map-section{
+	position: relative;
+}
+.map-section iframe{
+	display: block;
+}
+
+
+/* Footer Section CSS */
+footer{
+	background: #15141a;
+	padding: 3% 0 2.5%;
+	text-align: center;
+}
+.social-media ul li{
+	display: inline-block;
+	list-style: none;
+}
+.social-media ul li a i{
+    margin: 0 15px;
+	font-size: 25px;
+    color: #444348;
+    transition: all 0.3s ease-in-out;
+}
+.social-media ul li:hover a i{
+	color: #008ed6;
+}
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #444348;
 }
