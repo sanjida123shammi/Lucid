@@ -347,10 +347,10 @@ header{
 .ad-content p span{
 	font-weight: 700;
 }
-.ad-button{
+.ad-btn{
 	text-align: right;
 }
-.ad-button ul li{
+.ad-btn ul li{
 	display: inline-block;
 	list-style: none;
 }
@@ -486,7 +486,7 @@ header{
 /* Footer Section CSS */
 footer{
 	background: #15141a;
-	padding: 3% 0 2.5%;
+	padding: 2.5% 0 2%;
 	text-align: center;
 }
 .social-media ul li{
