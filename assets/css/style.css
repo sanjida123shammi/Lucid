@@ -27,8 +27,8 @@ ul{
 	padding: 0;
 }
 p{	
-    font-size: 18px;
-    line-height: 35px;
+    font-size: 17px;
+    line-height: 32px;
 	color: #999999;
 }
 .btn-all{
@@ -36,7 +36,8 @@ p{
     border-radius: 3px;
     padding: 15px 28px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 500;
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
@@ -47,7 +48,7 @@ p{
 }
 h6{
 	text-transform: uppercase;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 1.3px;
     color: #008ed6;
@@ -57,8 +58,8 @@ h6{
 }
 .section-title h2{
     margin-top: 20px;
-	font-size: 36px;
-    font-weight: 700;
+	font-size: 34px;
+    font-weight: 600;
     color: #1a1a1a;
 }
 .section-title span{
@@ -107,10 +108,7 @@ header{
 	min-height: 100vh;
 }
 .navbar{
-	padding: 50px 0;
-}
-.navbar-brand img{
-	width: 180px;
+	padding: 35px 0;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0;
@@ -118,8 +116,8 @@ header{
 }
 .nav-link{
 	position: relative;
-    margin-left: 25px;
-    font-size: 20px;
+    margin-left: 30px;
+    font-size: 17px;
 	color: #fff;
 }
 .nav-link:hover{
@@ -152,7 +150,7 @@ header{
 }
 .hero-content h1{
 	margin: 25px 0;
-	font-size: 48px;
+	font-size: 44px;
 	color: #fff;
 }
 .hero-content p{
@@ -167,6 +165,9 @@ header{
     width: 30%;
     bottom: 0;
     right: 11%;
+}
+.hide-dsk{
+	display: none;
 }
 
 
@@ -188,17 +189,17 @@ header{
 	border: 1px solid #e0e0e0;
     border-radius: 50%;
     margin: 0 auto;
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
 }
 .icon-border i{
-	font-size: 33px;
-	line-height: 100px;
+	font-size: 30px;
+	line-height: 95px;
 	color: #008ed6;
 }
 .feature-content h3{
     margin: 30px 0 15px;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 
@@ -290,21 +291,26 @@ header{
 .item p, .item h5{
 	color: #fff;
 }
+.client{
+	display: flex;
+}
 .client-review{
 	margin-bottom: 2%;
 }
 .client-review p{
 	font-style: italic;
-	font-size: 20px;
+	font-size: 18px;
 }
 .client-img{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
+	width: 70px;
+	height: 70px;
 	overflow: hidden;
 }
 .client-img img{
-	border-radius: 50%;
+	border-radius: 70px;
+}
+.client-info{
+	margin-left: 3%;
 }
 .client-info p{
     margin-top: 4%;
@@ -341,7 +347,8 @@ header{
 }
 .ad-content p{
 	font-size: 30px;
-	font-weight: 300;
+	font-weight: 100;
+	letter-spacing: 0.3px;
 	color: #fff;
 }
 .ad-content p span{
@@ -367,6 +374,7 @@ header{
 	border: 1px solid #e0e0e0;
 	padding: 22px 0;
 	text-align: center;
+	transition: all 0.1s ease-in-out;
 }
 .price-table h3{
 	margin-bottom: 22px;
@@ -397,6 +405,9 @@ header{
 	border: 1px solid #e0e0e0;
     color: #008ed6;
     transition: all .2s ease-in-out;
+}
+.price-table:hover{
+	box-shadow: 6px 8px 15px #999;
 }
 .price-table:hover h3{
 	color: #008ed6;
@@ -439,6 +450,7 @@ header{
 .form-box{
 	position: absolute;
 	background: #15141a;
+	border-radius: 3px;
 	margin-top: 3%;
 	padding: 3.3% 4%;
 	z-index: 1;
@@ -480,6 +492,7 @@ header{
 }
 .map-section iframe{
 	display: block;
+	width: 100%;
 }
 
 

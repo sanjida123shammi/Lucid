@@ -3,7 +3,7 @@ $(document).ready(function(){
     // OWL Carousel Banner
     $('.owl-carousel').owlCarousel({
         loop:true,
-        margin:0,
+        margin:10,
         nav:true,
         autoplay:true,
         autoplayTimeout:4000,
@@ -11,10 +11,10 @@ $(document).ready(function(){
         autoplayHoverPause:false,
         responsive:{
             0:{
-                items:2
+                items:1
             },
             600:{
-                items:2
+                items:1
             },
             1000:{
                 items:2
